@@ -1,0 +1,145 @@
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 180
+Num of clusters (sets) with same events = 2
+==============================================
+Num of clusters (sets) with same events  before symmetry = 2
+Num of clusters (sets) with same events  after symmetry = 2
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=8, out of 172 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =147 
+---------------------------------------------
+Schedule: 1
+3:
+(1,3,init(_),0)->(1,3,start,0),(2,3,getStatus2,0),(2,3,manualSelect,0),(2,3,updateStatus1(_),0),(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0)->(3,2,getStatus1,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 2
+3:
+(1,3,init(_),0)->(1,3,start,0),(2,3,getStatus2,0)->(2,3,manualSelect,0),(2,3,beStandby,0),(2,3,updateStatus1(_),0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0),(3,2,updateStatus2(_),0),(3,2,getStatus1,0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 3
+3:
+(1,3,init(_),0)->(2,3,getStatus2,0)->(2,3,manualSelect,0),(2,3,beStandby,0),(1,3,start,0)->(2,3,updateStatus1(_),0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0),(3,2,updateStatus2(_),0)->(3,2,getStatus1,0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 4
+3:
+(1,3,init(_),0)->(1,3,start,0),(2,3,getStatus2,0)->(2,3,updateStatus1(_),0),(2,3,manualSelect,0),(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(1,2,start,0)->(3,2,getStatus1,0),(1,2,manualSelect,0),(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 5
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,updateStatus1(_),0),(2,3,getStatus2,0),(2,3,manualSelect,0),(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(1,2,start,0)->(3,2,getStatus1,0),(1,2,manualSelect,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 6
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,manualSelect,0)->(2,3,updateStatus1(_),0)->(2,3,getStatus2,0)->(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(1,2,manualSelect,0),(3,2,getStatus1,0),(1,2,start,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 7
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,updateStatus1(_),0),(2,3,getStatus2,0)->(2,3,manualSelect,0),(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(3,2,getStatus1,0),(1,2,start,0),(1,2,manualSelect,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 8
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,getStatus2,0)->(2,3,updateStatus1(_),0)->(2,3,manualSelect,0)->(2,3,beStandby,0)
+2:
+(1,2,init(_),0)->(3,2,getStatus1,0),(1,2,start,0),(1,2,manualSelect,0),(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+================= Set 2 =================
+Reduction in number of schedules=2, out of 8 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,updateStatus1(_),0)->(2,3,manualSelect,0)->(2,3,getStatus2,0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0)->(3,2,getStatus1,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 2
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,updateStatus1(_),0)->(2,3,manualSelect,0)->(2,3,getStatus2,0)
+2:
+(1,2,init(_),0)->(3,2,getStatus1,0)->(1,2,start,0),(1,2,manualSelect,0)->(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+********************************************
+**************** RESULT = FINAL_STATE_IS_INVALID ************************
+Total number of schedules = 31
+Num of clusters (sets) with same events = 1
+==============================================
+Num of clusters (sets) with same events  before symmetry = 1
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=3, out of 31 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =11 
+---------------------------------------------
+Schedule: 1
+3:
+(1,3,init(_),0)->(1,3,start,0)->(2,3,manualSelect,0)->(2,3,getStatus2,0)->(2,3,updateStatus1(_),0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0),(3,2,getStatus1,0),(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 2
+3:
+(1,3,init(_),0)->(2,3,manualSelect,0),(1,3,start,0)->(2,3,getStatus2,0)->(2,3,updateStatus1(_),0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0)->(3,2,getStatus1,0),(3,2,updateStatus2(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+---------------------------------------------
+Schedule: 3
+3:
+(1,3,init(_),0)->(2,3,manualSelect,0)->(2,3,getStatus2,0),(1,3,start,0)->(2,3,updateStatus1(_),0)
+2:
+(1,2,init(_),0)->(1,2,start,0),(1,2,manualSelect,0)->(3,2,updateStatus2(_),0)->(3,2,getStatus1,0)
+1:
+(0,1,setUp,)->(0,1,test,0)->(2,1,init(_),0)->(3,1,init(_),0)
+
+********************************************
