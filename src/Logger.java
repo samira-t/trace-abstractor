@@ -31,7 +31,7 @@ public class Logger {
 		try {
 			summaryWriter = new BufferedWriter(new FileWriter(summaryFile, false));
 			summaryWriter.write(padRight("subject", subjectColumnLen) + padRight("|result ", resultColumnLen) + padRight("|#sched")
-					+ padRight("|#after") + padRight("|#sets") + " \n \n");
+					+ padRight("|#after") + padRight("|#sym") + padRight("|#sets") + " \n \n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -59,6 +59,7 @@ public class Logger {
 			for (String result : resultToSetMap.keySet()) {
 				int totalBefore = 0;
 				int totalAfter = 0;
+				int symReduc = 0;
 				String resultInfo = "";
 				String setInfo = "";
 				String[] subjectInfo = subject.replace(".txt", "").split("_");
@@ -88,10 +89,15 @@ public class Logger {
 				for (int[] setSchedules : resultToSetMap.get(result)) {
 					totalBefore += setSchedules[0];
 					totalAfter += setSchedules[1];
-					setInfo += padLeft("set", subjectColumnLen + resultColumnLen + numberColumnLen * 2 + 3) + (++setIndex) + ": bef#="
+					symReduc += setSchedules[3];
+					setInfo += padLeft("set", subjectColumnLen + resultColumnLen + numberColumnLen * 3 + 3) + (++setIndex) + ": bef#="
 							+ setSchedules[0] + ", aft#=" + setSchedules[1] + ", remConst#=" + setSchedules[2] + "\n";
 				}
-				resultInfo += padRight("|" + String.valueOf(totalBefore)) + padRight("|" + String.valueOf(totalAfter))
+				resultInfo += padRight("|" + String.valueOf(totalBefore))
+						+ padRight("|"
+								+ String.valueOf((totalAfter + symReduc) + "("
+										+ Math.round((double) (totalAfter + symReduc) / (double) totalBefore * 100)) + "%)")
+						+ padRight("|" + String.valueOf(totalAfter + "(" + Math.round((double) totalAfter / (double) totalBefore * 100) + "%)"))
 						+ padRight("|" + String.valueOf(resultToSetMap.get(result).size())) + "\n";
 				summaryWriter.write(resultInfo);
 				summaryWriter.write(setInfo + "\n");

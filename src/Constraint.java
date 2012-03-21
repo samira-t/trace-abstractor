@@ -25,18 +25,15 @@ public class Constraint {
 		ArrayList<Event[]> differences = new ArrayList<Event[]>();
 		for (int i = 0; i < events1.size(); i++) {
 			Event event1 = events1.get(i);
-			for (int j = i + 1; j < events2.size(); j++) {
-				Event event2 = events2.get(j);
+			for (int j = i + 1; j < events1.size(); j++) {
+				Event event2 = events1.get(j);
 				HappensBefore otherValue = otherConstrint.getHBRelValue(event1, event2);
 				if (otherValue != null && this.HBRel[i][j] != otherValue)
-					differences.add(new Event[] { events1.get(i), events2.get(j) });
+					differences.add(new Event[] { events1.get(i), events1.get(j) });
 				else if (otherValue == null) {
-					// if (oi == -1)
-					System.err.println(events1.get(i).toString() + "not exits");
-					// else
 					System.err.println(events2.get(j).toString() + "not exits");
-					throw new Exception("Event not exists");
-					// return null;
+					// throw new Exception("Event not exists");
+					return null;
 				}
 			}
 		}
@@ -53,15 +50,6 @@ public class Constraint {
 				event.receiver = actorMap.get(receiver);
 
 		}
-		// for (ActorEvent event : events2) {
-		// String sender = event.sender;
-		// String receiver = event.receiver;
-		// if (actorMap.containsKey(sender))
-		// event.sender = actorMap.get(sender);
-		// if (actorMap.containsKey(receiver))
-		// event.receiver = actorMap.get(receiver);
-		//
-		// }
 	}
 
 	public boolean isMatchedWith(Constraint otherConstrint) {
@@ -180,12 +168,10 @@ public class Constraint {
 			if (i < events2.size() - 1) {
 				ActorEvent event2 = (ActorEvent) events2.get(i + 1);
 				if (HBRel[i][i + 1] == HappensBefore.Y) {
-					// if (!events1.get(i).causallyRelatedTo(events2.get(i +
-					// 1)))
-					shortResult += "->" + event2.toString();
-					// else
-					// Logger.logInfo("casually related" + events1.get(i)
-					// + " and " + events2.get(i + 1));
+					if (!events1.get(i).causallyRelatedTo(events2.get(i + 1)))
+						shortResult += "->" + event2.toString();
+					else
+						Logger.logInfo("casually related" + events1.get(i) + " and " + events2.get(i + 1));
 				}
 
 				else if (HBRel[i][i + 1] == HappensBefore.D)

@@ -91,6 +91,8 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 			symmetricActors = new HashSet<String>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9"));
 		else if (subject.contains("sleepingbarber"))
 			symmetricActors = new HashSet<String>(Arrays.asList("3", "4", "5", "6"));
+		else if (subject.contains("music"))
+			symmetricActors = new HashSet<String>(Arrays.asList("3", "4", "5"));
 
 	}
 
@@ -392,13 +394,17 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 					ActorSchedule schedule2 = (ActorSchedule) schedules.get(j);
 					if (!redundantSchedules.contains(schedule2)) {
 						boolean equal = true;
-						for (String actor : schedule1.actorToConstraintMap.keySet()) {
-							Constraint const1 = (Constraint) schedule1.actorToConstraintMap.get(actor);
-							Constraint const2 = (Constraint) schedule2.actorToConstraintMap.get(actor);
-							ArrayList<Event[]> difference = const1.getDifference(const2);
-							if (difference != null && difference.size() > 0) {
-								equal = false;
-								break;
+						if (!schedule1.actorToConstraintMap.keySet().equals(schedule2.actorToConstraintMap.keySet())) {
+							equal = false;
+						} else {
+							for (String actor : schedule1.actorToConstraintMap.keySet()) {
+								Constraint const1 = (Constraint) schedule1.actorToConstraintMap.get(actor);
+								Constraint const2 = (Constraint) schedule2.actorToConstraintMap.get(actor);
+								ArrayList<Event[]> difference = const1.getDifference(const2);
+								if (difference != null && difference.size() > 0) {
+									equal = false;
+									break;
+								}
 							}
 						}
 						if (equal) {
@@ -848,17 +854,19 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 
 	@Override
 	Event parseLineForEvent(String line) {
-		try {
-			String[] eventParts = line.split(":");
-			String[] vc = eventParts[5].replace("[", "").replace("]", "").split(", ");
-			// int senderId = Integer.parseInt(eventParts[0]);
-			return new ActorEvent(eventParts[0], eventParts[1], eventParts[3], vc);
-			// return new ActorEvent(eventParts[0], eventParts[1],
-			// eventParts[3], "0");
-		} catch (Exception ex) {
-			Logger.logSchedule(line);
-			return null;
-		}
+		String[] eventParts = line.split(":");
+		String[] msgVc = Arrays.copyOfRange(eventParts[5].substring(1, eventParts[5].length() - 1).split(", "), 0, 11);
+		if (eventParts.length > 6) {
+			try {
+				String[] recVc = Arrays.copyOfRange(eventParts[6].substring(1, eventParts[6].length() - 1).split(", "), 0, 11);
+				return new ActorEvent(eventParts[0], eventParts[1], eventParts[3], msgVc, recVc);
+			} catch (Exception ex) {
+				// String[] eventParts = line.split(":");
+				Logger.logSchedule(line);
+				return null;
+			}
+		} else
+			return new ActorEvent(eventParts[0], eventParts[1], eventParts[3], msgVc);
 
 	}
 

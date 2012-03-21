@@ -32,16 +32,18 @@ public class Main {
 
 	private static void runActorScheudleAbstractor() {
 		String bugTraceFolder = ".\\inputs\\full\\";
+		String dropboxTraceFolder = "C:\\Users\\Samira\\Dropbox\\jpf-actor (1)\\bugtraces\\buginfo\\full\\";
 		String outputFolder1 = ".\\output1\\";
 		String outputFolder2 = ".\\output2\\";
 		String outputFolder_noparam = ".\\output-noparam\\";
 		String outputFolder_newSeq = ".\\output-newseq\\";
 		String outputFolder_symmetry = ".\\output-symmetry\\";
-		String temp = ".//temp//";
+		String outputFolder_symmetry_minimalconst = ".\\output-sym-minimalconst\\";
+		String temp = ".//testout//";
 
 		File traceFolder = new File(bugTraceFolder);
-		String outputFolder = outputFolder_symmetry;
-		Logger.setSummaryWriter(outputFolder + "summary-symmetry.txt");
+		String outputFolder = temp;
+		Logger.setSummaryWriter(outputFolder + "summary-test.txt");
 		HashSet<String> processedFiles = new HashSet<String>();
 		File[] files = traceFolder.listFiles();
 
@@ -57,8 +59,10 @@ public class Main {
 				subject = subject + "0";
 			else if (traceFile.getName().contains("leader_election_"))
 				subject = subject + "2";
-			if (traceFile.length() > 0 && traceFile.length() < (1024 * 1024 * 10) && traceFile.getName().contains("eca")
-					&& !processedFiles.contains(subject)
+			if (traceFile.length() > 0 // && subject.contains("procreg")
+
+					&& traceFile.length() < (1024 * 1024 * 10) && traceFile.getName().contains("eca") && !processedFiles.contains(subject)
+
 			/* && subject.contains("procreg1") */) {
 				// the
 				processedFiles.add(subject);

@@ -267,32 +267,6 @@ class ActorSchedule extends Schedule {
 			}
 		}
 
-		// actorMap.put("2", "1");
-		// actorMap.put("1", "2");
-		// thisCopy.changeActorsInConstraints(actorMap);
-		// // otherCopy.changeActorsInConstraints(actorMap);
-		// if (thisCopy.equals(otherCopy))
-		// return true;
-		// thisCopy.changeActorsInConstraints(actorMap);
-		//
-		// actorMap.clear();
-		// actorMap.put("3", "1");
-		// actorMap.put("1", "3");
-		// thisCopy.changeActorsInConstraints(actorMap);
-		// // otherCopy.changeActorsInConstraints(actorMap);
-		// if (thisCopy.equals(otherCopy))
-		// return true;
-		// thisCopy.changeActorsInConstraints(actorMap);
-		//
-		// actorMap.clear();
-		// actorMap.put("3", "2");
-		// actorMap.put("2", "3");
-		// thisCopy.changeActorsInConstraints(actorMap);
-		// // otherCopy.changeActorsInConstraints(actorMap);
-		// if (thisCopy.equals(otherCopy))
-		// return true;
-		// thisCopy.changeActorsInConstraints(actorMap);
-
 		return false;
 
 	}
