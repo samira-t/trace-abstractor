@@ -1,0 +1,235 @@
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 34
+Num of clusters (sets) with same events = 6
+==============================================
+Num of clusters (sets) with same events  before symmetry = 6
+Num of clusters (sets) with same events  after symmetry = 3
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=2, out of 7 schedules 
+Reduction becauase of symmetry equivalence=2 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),1)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),0)->(1,7,Audit(_),0)->(6,7,!-1(_),0)->(4,7,!false(_),2)->(6,7,!(_),1)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),1)->(6,7,!(_),2)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),0)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),1)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 2
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),1)->(6,7,!true(_),0)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),0)->(1,7,Audit(_),0)->(6,7,!-1(_),0)->(4,7,!false(_),2)->(6,7,!(_),1)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),1)->(6,7,!(_),2)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),1)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+================= Set 2 =================
+Reduction in number of schedules=6, out of 20 schedules 
+Reduction becauase of symmetry equivalence=2 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(2,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),1)->(2,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(7,7,Down(_),0)->(6,7,!None(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),0)->(6,7,!(_),1)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(2,6,InsertNewForward(_),1),(7,6,GetMatch(_),0)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 2
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),1)->(1,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),1)->(7,7,Down(_),1)->(6,7,!None(_),0)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),1)->(7,6,GetMatch(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 3
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),1)->(6,7,!true(_),0)->(2,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(7,7,Down(_),0)->(6,7,!None(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),0)->(6,7,!(_),1)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(2,6,InsertNewForward(_),1),(7,6,GetMatch(_),0)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 4
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),1)->(6,7,!true(_),0)->(1,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),1)->(7,7,Down(_),1)->(6,7,!None(_),0)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),1)->(7,6,GetMatch(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 5
+2:
+(0,2,Register(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!false(_),0)->(7,1,!-1(_),0)->(7,1,!(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),1)->(1,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(7,7,Down(_),0)->(6,7,!None(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),0)->(6,7,!(_),1)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(1,6,InsertNewForward(_),1)->(7,6,GetMatch(_),0)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 6
+2:
+(0,2,Register(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!false(_),0)->(7,1,!-1(_),0)->(7,1,!(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),1)->(6,7,!true(_),0)->(1,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),2)->(6,7,!(_),0)->(7,7,Down(_),0)->(6,7,!None(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),0)->(6,7,!(_),1)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(1,6,InsertNewForward(_),1)->(7,6,GetMatch(_),0)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),1)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+================= Set 3 =================
+Reduction in number of schedules=2, out of 7 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =1 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),0)->(2,7,Where(_),0)->(6,7,!-1(_),0)->(4,7,!false(_),1)->(2,7,Audit(_),0)->(6,7,!-1(_),1)->(4,7,!false(_),2)->(6,7,!(_),1)->(2,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),1)->(6,7,!(_),2)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0),(7,6,InsertNewBackward(_),0)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),1)->(2,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+---------------------------------------------
+Schedule: 2
+2:
+(0,2,Register(_),0)->(6,2,!true(_),0)
+1:
+(0,1,Register(_),0)->(6,1,!false(_),0)->(7,1,!-1(_),0)->(7,1,!(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Reg(_),0)->(4,7,!false(_),0)->(6,7,!true(_),0)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),0)->(1,7,Where(_),0)->(6,7,!-1(_),0)->(4,7,!false(_),1)->(1,7,Audit(_),0)->(6,7,!-1(_),1)->(4,7,!false(_),2)->(6,7,!(_),1)->(1,7,Reg(_),0)->(4,7,!false(_),3)->(6,7,!true(_),1)->(7,7,Down(_),1)->(6,7,!Some(_),1)->(6,7,!(_),2)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),1)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),1)->(7,6,GetMatch(_),1)->(7,6,DeleteEntry(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+********************************************
+**************** RESULT = TRACE_HAD_ERROR/EXCEPTION/INVALID_TERMINATION ************************
+Total number of schedules = 5
+Num of clusters (sets) with same events = 4
+==============================================
+Num of clusters (sets) with same events  before symmetry = 4
+Num of clusters (sets) with same events  after symmetry = 3
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=1, out of 3 schedules 
+Reduction becauase of symmetry equivalence=1 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!false(_),1)->(7,2,!-1(_),1)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(1,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(1,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),1)->(6,7,!(_),0)->(2,7,Reg(_),0)->(4,7,!false(_),2)->(6,7,!true(_),0)->(1,7,Where(_),1)->(6,7,!1(_),2)->(4,7,!false(_),3)
+6:
+(2,6,InsertNewForward(_),0)->(1,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(1,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),0)->(7,6,Lookup(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+================= Set 2 =================
+Reduction in number of schedules=1, out of 1 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!false(_),1)->(7,2,!-1(_),1)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(2,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),1)->(6,7,!(_),0)->(1,7,Reg(_),0)->(4,7,!false(_),2)->(6,7,!true(_),0)->(7,7,Down(_),0)->(6,7,!Some(_),0)->(6,7,!(_),1)->(2,7,Where(_),1)->(6,7,!-1(_),0)->(4,7,!false(_),3)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(2,6,InsertNewForward(_),1)->(7,6,InsertNewBackward(_),0)->(7,6,GetMatch(_),0)->(7,6,DeleteEntry(_),1)->(7,6,Lookup(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)->(7,4,isProcessAlive(_),3)
+
+================= Set 3 =================
+Reduction in number of schedules=1, out of 1 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+2:
+(0,2,Register(_),0)->(6,2,!false(_),0)->(7,2,!-1(_),0)->(7,2,!(_),0)->(6,2,!false(_),1)->(7,2,!-1(_),1)
+1:
+(0,1,Register(_),0)->(6,1,!true(_),0)
+0:
+(4,0,!1(_),0)->(4,0,!(_),0)
+7:
+(2,7,Where(_),0)->(6,7,!1(_),0)->(4,7,!false(_),0)->(2,7,Audit(_),0)->(6,7,!1(_),1)->(4,7,!false(_),1)->(6,7,!(_),0)->(2,7,Where(_),1)->(6,7,!1(_),2)->(4,7,!false(_),2)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0)->(7,6,Lookup(_),0)->(7,6,Lookup(_),1)->(7,6,DeleteEntry(_),0)->(2,6,InsertNewForward(_),1)->(7,6,Lookup(_),2)
+4:
+(0,4,spawn(_),1)->(0,4,kill(_),0)->(7,4,isProcessAlive(_),0)->(7,4,isProcessAlive(_),1)->(7,4,isProcessAlive(_),2)
+
+********************************************

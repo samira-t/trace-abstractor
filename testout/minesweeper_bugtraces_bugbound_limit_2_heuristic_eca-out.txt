@@ -1,0 +1,68 @@
+**************** RESULT = DEADLOCK_DETECTED ************************
+Total number of schedules = 15
+Num of clusters (sets) with same events = 1
+==============================================
+Num of clusters (sets) with same events  before symmetry = 1
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=1, out of 15 schedules 
+Reduction becauase of symmetry equivalence=0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+8:
+(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)
+
+********************************************
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 673
+Num of clusters (sets) with same events = 2
+==============================================
+Num of clusters (sets) with same events  before symmetry = 2
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules=1, out of 673 schedules 
+Reduction becauase of symmetry equivalence=21 schedules 
+Number of removed constraints =209 
+---------------------------------------------
+Schedule: 1
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(5,9,CellHasMine,0),(8,9,CellHasMine,0),(5,9,CellReveal(_),0),(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+********************************************

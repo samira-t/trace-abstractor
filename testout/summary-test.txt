@@ -1,0 +1,126 @@
+subject                       |result        |#sched |#after |#sym   |#sets   
+ 
+sleepingbarber-eca-3          |NO_BUG        |493    |98(20%)|52(11%)|2      
+                                                                     set1: bef#=471, aft#=41, remConst#=636
+                                                                     set2: bef#=22, aft#=11, remConst#=7
+
+sleepingbarber-eca-3          |EXCEPTION     |212    |132(62%)|25(12%)|1      
+                                                                     set1: bef#=212, aft#=25, remConst#=152
+
+==========================================
+procreg-eca-3                 |NO_BUG        |34     |14(41%)|10(29%)|3      
+                                                                     set1: bef#=7, aft#=2, remConst#=0
+                                                                     set2: bef#=20, aft#=6, remConst#=2
+                                                                     set3: bef#=7, aft#=2, remConst#=1
+
+procreg-eca-3                 |EXCEPTION     |5      |4(80%) |3(60%) |3      
+                                                                     set1: bef#=3, aft#=1, remConst#=0
+                                                                     set2: bef#=1, aft#=1, remConst#=0
+                                                                     set3: bef#=1, aft#=1, remConst#=0
+
+==========================================
+procreg1-eca-3                |NO_BUG        |360    |158(44%)|141(39%)|13     
+                                                                     set1: bef#=140, aft#=52, remConst#=15
+                                                                     set2: bef#=9, aft#=5, remConst#=1
+                                                                     set3: bef#=131, aft#=39, remConst#=15
+                                                                     set4: bef#=26, aft#=10, remConst#=2
+                                                                     set5: bef#=3, aft#=3, remConst#=0
+                                                                     set6: bef#=1, aft#=1, remConst#=0
+                                                                     set7: bef#=10, aft#=4, remConst#=1
+                                                                     set8: bef#=1, aft#=1, remConst#=0
+                                                                     set9: bef#=17, aft#=12, remConst#=1
+                                                                     set10: bef#=1, aft#=1, remConst#=0
+                                                                     set11: bef#=18, aft#=10, remConst#=1
+                                                                     set12: bef#=2, aft#=2, remConst#=0
+                                                                     set13: bef#=1, aft#=1, remConst#=0
+
+procreg1-eca-3                |EXCEPTION     |926    |264(29%)|237(26%)|52     
+                                                                     set1: bef#=77, aft#=12, remConst#=6
+                                                                     set2: bef#=26, aft#=4, remConst#=3
+                                                                     set3: bef#=15, aft#=4, remConst#=2
+                                                                     set4: bef#=47, aft#=8, remConst#=5
+                                                                     set5: bef#=12, aft#=3, remConst#=0
+                                                                     set6: bef#=10, aft#=3, remConst#=0
+                                                                     set7: bef#=71, aft#=11, remConst#=4
+                                                                     set8: bef#=22, aft#=3, remConst#=2
+                                                                     set9: bef#=16, aft#=3, remConst#=2
+                                                                     set10: bef#=34, aft#=7, remConst#=4
+                                                                     set11: bef#=125, aft#=21, remConst#=15
+                                                                     set12: bef#=32, aft#=10, remConst#=3
+                                                                     set13: bef#=26, aft#=10, remConst#=3
+                                                                     set14: bef#=14, aft#=8, remConst#=0
+                                                                     set15: bef#=3, aft#=2, remConst#=0
+                                                                     set16: bef#=100, aft#=20, remConst#=15
+                                                                     set17: bef#=23, aft#=8, remConst#=2
+                                                                     set18: bef#=19, aft#=8, remConst#=2
+                                                                     set19: bef#=12, aft#=7, remConst#=0
+                                                                     set20: bef#=2, aft#=2, remConst#=0
+                                                                     set21: bef#=27, aft#=4, remConst#=4
+                                                                     set22: bef#=4, aft#=3, remConst#=1
+                                                                     set23: bef#=4, aft#=3, remConst#=1
+                                                                     set24: bef#=8, aft#=1, remConst#=0
+                                                                     set25: bef#=6, aft#=1, remConst#=0
+                                                                     set26: bef#=1, aft#=1, remConst#=0
+                                                                     set27: bef#=21, aft#=2, remConst#=2
+                                                                     set28: bef#=3, aft#=2, remConst#=1
+                                                                     set29: bef#=3, aft#=2, remConst#=1
+                                                                     set30: bef#=12, aft#=3, remConst#=2
+                                                                     set31: bef#=2, aft#=1, remConst#=0
+                                                                     set32: bef#=2, aft#=1, remConst#=0
+                                                                     set33: bef#=2, aft#=1, remConst#=0
+                                                                     set34: bef#=2, aft#=1, remConst#=0
+                                                                     set35: bef#=7, aft#=3, remConst#=1
+                                                                     set36: bef#=1, aft#=1, remConst#=0
+                                                                     set37: bef#=1, aft#=1, remConst#=0
+                                                                     set38: bef#=1, aft#=1, remConst#=0
+                                                                     set39: bef#=1, aft#=1, remConst#=0
+                                                                     set40: bef#=31, aft#=5, remConst#=3
+                                                                     set41: bef#=9, aft#=3, remConst#=1
+                                                                     set42: bef#=7, aft#=3, remConst#=1
+                                                                     set43: bef#=14, aft#=6, remConst#=1
+                                                                     set44: bef#=45, aft#=16, remConst#=5
+                                                                     set45: bef#=5, aft#=4, remConst#=0
+                                                                     set46: bef#=5, aft#=4, remConst#=0
+                                                                     set47: bef#=1, aft#=1, remConst#=0
+                                                                     set48: bef#=1, aft#=1, remConst#=0
+                                                                     set49: bef#=9, aft#=3, remConst#=1
+                                                                     set50: bef#=1, aft#=1, remConst#=0
+                                                                     set51: bef#=1, aft#=1, remConst#=0
+                                                                     set52: bef#=3, aft#=2, remConst#=0
+
+==========================================
+musicplayer3-eca-1            |DEADLOCK      |6      |3(50%) |3(50%) |3      
+                                                                     set1: bef#=2, aft#=1, remConst#=0
+                                                                     set2: bef#=2, aft#=1, remConst#=0
+                                                                     set3: bef#=2, aft#=1, remConst#=0
+
+musicplayer3-eca-1            |NO_BUG        |120    |3(3%)  |3(3%)  |1      
+                                                                     set1: bef#=120, aft#=3, remConst#=5
+
+==========================================
+minesweeper-eca-2             |DEADLOCK      |15     |1(7%)  |1(7%)  |1      
+                                                                     set1: bef#=15, aft#=1, remConst#=0
+
+minesweeper-eca-2             |NO_BUG        |673    |22(3%) |1(0%)  |1      
+                                                                     set1: bef#=673, aft#=1, remConst#=209
+
+==========================================
+leader-eca-2                  |NO_BUG        |532    |63(12%)|63(12%)|1      
+                                                                     set1: bef#=532, aft#=63, remConst#=214
+
+leader-eca-2                  |INVALID_STATE |1144   |11(1%) |11(1%) |1      
+                                                                     set1: bef#=1144, aft#=11, remConst#=247
+
+==========================================
+leaderzero-eca-1              |NO_BUG        |83     |17(20%)|17(20%)|1      
+                                                                     set1: bef#=83, aft#=17, remConst#=25
+
+==========================================
+activestandby-eca-3           |NO_BUG        |180    |10(6%) |10(6%) |2      
+                                                                     set1: bef#=172, aft#=8, remConst#=147
+                                                                     set2: bef#=8, aft#=2, remConst#=2
+
+activestandby-eca-3           |INVALID_STATE |31     |3(10%) |3(10%) |1      
+                                                                     set1: bef#=31, aft#=3, remConst#=11
+
+==========================================
