@@ -122,6 +122,18 @@ public class Constraint {
 		return differences;
 	}
 
+	public int getNumOfRemovedConstraints() {
+		int count = 0;
+		for (int i = 0; i < events1.size(); i++) {
+			for (int j = i + 1; j < events2.size(); j++) {
+				if (HBRel[i][j] == HappensBefore.D)
+					count++;
+			}
+		}
+		return 2 * count;
+
+	}
+
 	public HappensBefore getHBRelValue(Event event1, Event event2) {
 		int oi = events1.indexOf(event1);
 		int oj = events2.indexOf(event2);

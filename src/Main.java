@@ -37,13 +37,13 @@ public class Main {
 		String outputFolder2 = ".\\output2\\";
 		String outputFolder_noparam = ".\\output-noparam\\";
 		String outputFolder_newSeq = ".\\output-newseq\\";
-		String outputFolder_symmetry = ".\\output-symmetry\\";
+		String outputFolder_symmetry = ".\\output-symmetry-new\\";
 		String outputFolder_symmetry_minimalconst = ".\\output-sym-minimalconst\\";
-		String temp = ".//testout//";
+		String temp = ".//temp//";
 
 		File traceFolder = new File(bugTraceFolder);
-		String outputFolder = temp;
-		Logger.setSummaryWriter(outputFolder + "summary-test.txt");
+		String outputFolder = outputFolder_symmetry;
+		Logger.setSummaryWriter(outputFolder + "summary-2.txt");
 		HashSet<String> processedFiles = new HashSet<String>();
 		File[] files = traceFolder.listFiles();
 
@@ -61,9 +61,9 @@ public class Main {
 				subject = subject + "2";
 			if (traceFile.length() > 0 // && subject.contains("procreg")
 
-					&& traceFile.length() < (1024 * 1024 * 10) && traceFile.getName().contains("eca") && !processedFiles.contains(subject)
+					&& traceFile.length() < (1024 * 1024 * 15) && traceFile.getName().contains("eca") && !processedFiles.contains(subject)
 
-			/* && subject.contains("procreg1") */) {
+			/* && subject.contains("mine") */) {
 				// the
 				processedFiles.add(subject);
 

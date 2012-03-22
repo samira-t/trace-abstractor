@@ -1,0 +1,1260 @@
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 532
+Num of clusters (sets) with same events = 15
+==============================================
+Num of clusters (sets) with same events  before symmetry = 15
+Num of clusters (sets) with same events  after symmetry = 14
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 6, out of 81 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =38 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0),(3,4,capture(_),0),(5,4,capture(_),0)->(3,4,accept(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =20
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(4,6,capture(_),0),(5,6,elect(_),0),(5,6,capture(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0),(3,5,capture(_),0),(4,5,accept(_),0),(4,5,capture(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0),(3,6,capture(_),0)->(5,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0),(3,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0)->(3,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+================= Set 2 =================
+Reduction in number of schedules = 6, out of 76 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =30 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0),(3,4,capture(_),0),(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(3,5,capture(_),0),(2,5,start,0),(4,5,capture(_),0),(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =12
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(4,6,capture(_),0),(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,accept(_),0),(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0),(3,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0),(3,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0)->(3,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+================= Set 3 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,elect(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)->(4,5,accept(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+================= Set 4 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(6,3,elect(_),0)->(6,3,elect(_),1)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)->(5,6,accept(_),1)->(5,6,accept(_),2)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(4,5,accept(_),0)->(4,5,accept(_),1)->(6,5,elect(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(3,4,accept(_),0),(6,4,capture(_),0)->(6,4,elect(_),0)
+
+================= Set 5 =================
+Reduction in number of schedules = 9, out of 137 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =50 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0),(5,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0),(3,5,accept(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0),(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(3,4,capture(_),0),(2,4,start,0)->(5,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =22
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(5,6,capture(_),0),(4,6,capture(_),0),(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0),(5,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =8
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,accept(_),0),(3,5,capture(_),0),(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0),(4,5,capture(_),0),(3,5,accept(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(5,3,capture(_),0),(2,3,start,0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,accept(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 9
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(4,6,capture(_),0),(3,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,accept(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(6,4,capture(_),0)
+
+================= Set 6 =================
+Reduction in number of schedules = 2, out of 14 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0),(5,6,capture(_),0)->(4,6,accept(_),1)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(4,6,accept(_),0)->(4,6,accept(_),1)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0),(3,4,accept(_),0)->(6,4,elect(_),0)
+
+================= Set 7 =================
+Reduction in number of schedules = 2, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)->(6,3,elect(_),1)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0),(5,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)->(6,3,elect(_),1)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0),(5,6,accept(_),0)->(4,6,accept(_),1)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+================= Set 8 =================
+Reduction in number of schedules = 9, out of 115 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =48 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0),(3,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0),(6,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0),(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(3,4,capture(_),0),(2,4,start,0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =12
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(3,5,capture(_),0),(2,5,start,0)->(6,5,capture(_),0),(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0),(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(3,6,accept(_),0),(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0),(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0),(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0),(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =8
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0),(4,6,capture(_),0),(3,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0),(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(6,3,capture(_),0),(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,accept(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 9
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(4,5,capture(_),0),(3,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+================= Set 9 =================
+Reduction in number of schedules = 4, out of 12 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =14 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0),(4,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(5,4,elect(_),0)->(5,4,elect(_),1)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0),(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0),(4,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(5,4,capture(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(5,4,elect(_),1)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0),(4,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(5,4,elect(_),1)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)->(5,6,elect(_),1)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,accept(_),0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(5,4,capture(_),0),(2,4,start,0)->(3,4,capture(_),0)->(5,4,elect(_),0)->(5,4,elect(_),1)->(6,4,capture(_),0)
+
+================= Set 10 =================
+Reduction in number of schedules = 4, out of 7 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(4,5,accept(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)->(4,5,accept(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,elect(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,elect(_),0)
+
+================= Set 11 =================
+Reduction in number of schedules = 3, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(5,6,accept(_),1)->(5,6,accept(_),2)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,elect(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(5,6,accept(_),1)->(5,6,accept(_),2)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,elect(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(5,6,accept(_),1)->(5,6,accept(_),2)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(3,5,accept(_),0)->(4,5,capture(_),0)->(4,5,accept(_),0)->(6,5,elect(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(5,4,capture(_),0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+================= Set 12 =================
+Reduction in number of schedules = 5, out of 28 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =20 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0),(5,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(5,3,capture(_),0),(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(5,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0),(5,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(5,3,capture(_),0),(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(5,6,capture(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(5,3,capture(_),0)->(4,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,capture(_),0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(3,4,capture(_),0)->(6,4,elect(_),0)
+
+================= Set 13 =================
+Reduction in number of schedules = 3, out of 7 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0),(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0),(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+================= Set 14 =================
+Reduction in number of schedules = 8, out of 38 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =28 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(4,6,accept(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(4,6,accept(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0),(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(6,4,capture(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(4,6,accept(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,accept(_),0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)->(6,5,elect(_),2)
+4:
+(2,4,init(_),0)->(6,4,capture(_),0),(2,4,start,0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(5,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(6,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)->(6,4,elect(_),2)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(5,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0),(6,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)->(6,4,elect(_),2)
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(3,6,accept(_),0),(5,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(6,5,capture(_),0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)->(6,4,elect(_),2)
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(2,3,start,0)->(6,3,capture(_),0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,elect(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(5,6,accept(_),0)->(3,6,capture(_),0)->(3,6,accept(_),0)->(4,6,capture(_),0)->(4,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0),(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,elect(_),0)->(6,5,elect(_),1)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(6,4,capture(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,elect(_),0)->(6,4,elect(_),1)->(6,4,elect(_),2)
+
+********************************************
+**************** RESULT = FINAL_STATE_IS_INVALID ************************
+Total number of schedules = 1144
+Num of clusters (sets) with same events = 1
+==============================================
+Num of clusters (sets) with same events  before symmetry = 1
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 11, out of 1144 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =112 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =24
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(4,6,capture(_),0),(5,6,capture(_),0),(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0),(3,5,capture(_),0),(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0),(3,5,capture(_),0),(6,5,capture(_),0),(4,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =8
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0),(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0),(3,4,capture(_),0),(3,4,accept(_),0)->(6,4,capture(_),0),(5,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(3,5,capture(_),0),(2,5,start,0),(4,5,capture(_),0),(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =16
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(4,6,capture(_),0),(5,6,accept(_),0),(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =0
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,accept(_),0)->(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(6,5,capture(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =22
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0),(3,6,capture(_),0),(4,6,capture(_),0),(5,6,accept(_),0),(5,6,capture(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(3,5,capture(_),0)->(4,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,accept(_),0),(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =10
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(3,6,capture(_),0)->(4,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0),(4,5,capture(_),0),(3,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,accept(_),0),(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 9
+Number of removed constraints =4
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(6,3,capture(_),0)->(5,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0),(3,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0),(3,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,capture(_),0)->(3,4,accept(_),0)->(6,4,capture(_),0)->(5,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 10
+Number of removed constraints =6
+3:
+(2,3,init(_),0)->(2,3,start,0)->(4,3,capture(_),0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0),(3,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0),(3,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,accept(_),0),(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+---------------------------------------------
+Schedule: 11
+Number of removed constraints =2
+3:
+(2,3,init(_),0)->(4,3,capture(_),0),(2,3,start,0)->(5,3,capture(_),0)->(6,3,capture(_),0)
+2:
+(0,2,boot,0)->(3,2,init(_),0)->(4,2,init(_),0)->(5,2,init(_),0)->(6,2,init(_),0)
+1:
+(0,1,setUp,)->(0,1,test,0)
+6:
+(2,6,init(_),0)->(2,6,start,0)->(4,6,capture(_),0)->(3,6,capture(_),0)->(5,6,capture(_),0)->(5,6,accept(_),0)
+5:
+(2,5,init(_),0)->(2,5,start,0)->(4,5,capture(_),0)->(3,5,capture(_),0)->(6,5,capture(_),0)
+4:
+(2,4,init(_),0)->(2,4,start,0)->(3,4,accept(_),0)->(3,4,capture(_),0)->(5,4,capture(_),0)->(6,4,capture(_),0)
+
+********************************************

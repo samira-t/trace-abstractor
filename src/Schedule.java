@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 enum HappensBefore {
 	N, D, Y
@@ -196,7 +195,7 @@ class ActorSchedule extends Schedule {
 
 	}
 
-	public boolean hasTheSameEventsByIgnoringSomeActors(ActorSchedule otherSchedule, HashSet<String> ignoringActors) {
+	public boolean hasTheSameEventsByIgnoringSomeActors(ActorSchedule otherSchedule, ArrayList<String> ignoringActors) {
 		for (String actor : this.actorToConstraintMap.keySet()) {
 			if (!ignoringActors.contains(actor)) {
 				Constraint thisConst = (Constraint) this.actorToConstraintMap.get(actor);
@@ -227,6 +226,34 @@ class ActorSchedule extends Schedule {
 
 	}
 
+	public boolean hasTheSameSymmetricEvents(ActorSchedule otherSchedule, ArrayList<String> symmetricActors) {
+		ArrayList<HashMap<String, String>> maps = createSymmetricMaps(symmetricActors);
+		for (HashMap<String, String> map : maps) {
+			// ActorSchedule thisCopy = this.clone();
+			this.changeActorsInConstraints(map);
+			if (this.hasTheSameEvents(otherSchedule)) {
+				this.changeActorsInConstraints(map);
+				return true;
+			}
+			this.changeActorsInConstraints(map);
+		}
+		return false;
+
+	}
+
+	public ArrayList<HashMap<String, String>> createSymmetricMaps(ArrayList<String> symmetricActors) {
+		ArrayList<HashMap<String, String>> maps = new ArrayList<HashMap<String, String>>();
+		for (int i = 0; i < symmetricActors.size(); i++) {
+			for (int j = i + 1; j < symmetricActors.size(); j++) {
+				HashMap<String, String> map = new HashMap<String, String>();
+				map.put(symmetricActors.get(i), symmetricActors.get(j));
+				map.put(symmetricActors.get(j), symmetricActors.get(i));
+				maps.add(map);
+			}
+		}
+		return maps;
+	}
+
 	public boolean equals(ActorSchedule otherSchedule) throws Exception {
 		if (!this.hasTheSameEvents(otherSchedule))
 			return false;
@@ -241,41 +268,90 @@ class ActorSchedule extends Schedule {
 		return true;
 	}
 
-	public boolean equalsByApplyingSymmetry(ActorSchedule otherSchedule, HashSet<String> symmetricActors) throws Exception {
-		ActorSchedule thisCopy = this.clone();
-		ActorSchedule otherCopy = otherSchedule.clone();
+	// public boolean equalsByApplyingSymmetry(ActorSchedule otherSchedule,
+	// ArrayList<String> symmetricActors) throws Exception {
+	// ActorSchedule thisCopy = this.clone();
+	// ActorSchedule otherCopy = otherSchedule.clone();
+	//
+	// for (String actor : symmetricActors) {
+	// thisCopy.actorToConstraintMap.remove(actor);
+	// otherCopy.actorToConstraintMap.remove(actor);
+	// }
+	//
+	// HashMap<String, String> actorMap = new HashMap<String, String>();
+	// // Object[] ignoringActorsArray = symmetricActors.toArray();
+	// for (int i = 0; i < symmetricActors.size() - 1; i++) {
+	// for (int j = i + 1; j < symmetricActors.size(); j++) {
+	// actorMap.put(symmetricActors.get(i), symmetricActors.get(j));
+	// actorMap.put(symmetricActors.get(j), symmetricActors.get(i));
+	// thisCopy.changeActorsInConstraints(actorMap);
+	// if (thisCopy.equals(otherCopy)){
+	// return true;
+	// }
+	// thisCopy.changeActorsInConstraints(actorMap);
+	//
+	// actorMap.clear();
+	//
+	// }
+	// }
+	//
+	// return false;
+	//
+	// }
 
-		for (String actor : symmetricActors) {
-			thisCopy.actorToConstraintMap.remove(actor);
-			otherCopy.actorToConstraintMap.remove(actor);
-		}
-
-		HashMap<String, String> actorMap = new HashMap<String, String>();
-		Object[] ignoringActorsArray = symmetricActors.toArray();
-		for (int i = 0; i < ignoringActorsArray.length - 1; i++) {
-			for (int j = i + 1; j < ignoringActorsArray.length; j++) {
-				actorMap.put((String) ignoringActorsArray[i], (String) ignoringActorsArray[j]);
-				actorMap.put((String) ignoringActorsArray[j], (String) ignoringActorsArray[i]);
-				thisCopy.changeActorsInConstraints(actorMap);
-				// otherCopy.changeActorsInConstraints(actorMap);
-				if (thisCopy.equals(otherCopy))
-					return true;
-				thisCopy.changeActorsInConstraints(actorMap);
-
-				actorMap.clear();
-
+	public boolean isMatchedByApplyingSymmetry(ActorSchedule otherSchedule, ArrayList<String> symmetricActors) {
+		if (/* this.hasTheSameEvents(otherSchedule) && */this.isMatchedWith(otherSchedule))
+			return true;
+		ArrayList<HashMap<String, String>> maps = createSymmetricMaps(symmetricActors);
+		for (HashMap<String, String> map : maps) {
+			// ActorSchedule thisCopy = this.clone();
+			this.changeActorsInConstraints(map);
+			if (/* this.hasTheSameEvents(otherSchedule) && */this.isMatchedWith(otherSchedule)) {
+				this.changeActorsInConstraints(map);
+				return true;
 			}
+			changeActorsInConstraints(map);
 		}
-
 		return false;
 
 	}
 
+	public boolean isMatchedWith(ActorSchedule otherSchedule) {
+		for (String actor : this.actorToConstraintMap.keySet()) {
+			Constraint thisConst = this.actorToConstraintMap.get(actor);
+			Constraint otherConst = otherSchedule.actorToConstraintMap.get(actor);
+			if (!thisConst.isMatchedWith(otherConst)) {
+				return false;
+			}
+		}
+
+		return true;
+
+	}
+
 	public void changeActorsInConstraints(HashMap<String, String> actorMap) {
+
 		for (String actor : this.actorToConstraintMap.keySet()) {
 			this.actorToConstraintMap.get(actor).changeActorsInEvents(actorMap);
-
 		}
+
+		HashMap<String, Constraint> constForActorsInMap = new HashMap<String, Constraint>();
+		for (String actor : actorMap.keySet()) {
+			if (this.actorToConstraintMap.containsKey(actor)) {
+				constForActorsInMap.put(actorMap.get(actor), this.actorToConstraintMap.remove(actor));
+			}
+		}
+		if (!constForActorsInMap.isEmpty())
+			this.actorToConstraintMap.putAll(constForActorsInMap);
+
+	}
+
+	public int getNumOfRemovedConstraints() {
+		int count = 0;
+		for (String actor : this.actorToConstraintMap.keySet()) {
+			count += this.actorToConstraintMap.get(actor).getNumOfRemovedConstraints();
+		}
+		return count;
 	}
 
 	public ActorSchedule clone() {

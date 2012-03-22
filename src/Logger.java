@@ -38,7 +38,7 @@ public class Logger {
 		}
 	}
 
-	public static void logSchedule(String msg) {
+	private static void writeScheduleInfo(String msg) {
 		if (scheduleWriter != null) {
 			try {
 				scheduleWriter.write(msg);
@@ -49,11 +49,45 @@ public class Logger {
 		}
 	}
 
+	public static void reportOriginalSchedulesInfo(String result, int totalSize, ArrayList<ArrayList<Schedule>> scheudlesWithSameEvents) {
+		Logger.writeScheduleInfo("**************** RESULT = " + result + " ************************\n");
+		Logger.writeScheduleInfo("Total number of schedules = " + totalSize + "\n");
+		Logger.writeScheduleInfo("Num of clusters (sets) with same events = " + scheudlesWithSameEvents.size() + "\n");
+		Logger.writeScheduleInfo("==============================================\n");
+	}
+
+	public static void reportSchedulesOfResult(String result, ArrayList<int[]> setsInfo, ArrayList<ArrayList<Schedule>> scheudlesWithSameEvents,
+			ArrayList<ArrayList<Schedule>> finalReducedSchedules) {
+		writeScheduleInfo("Num of clusters (sets) with same events  before symmetry = " + scheudlesWithSameEvents.size() + "\n");
+		writeScheduleInfo("Num of clusters (sets) with same events  after symmetry = " + finalReducedSchedules.size() + "\n");
+		writeScheduleInfo("==============================================\n");
+
+		for (int i = 0; i < finalReducedSchedules.size(); i++) {
+			writeScheduleInfo("================= Set " + (i + 1) + " =================\n");
+
+			int[] info = setsInfo.get(i);
+			ArrayList<Schedule> schedules = finalReducedSchedules.get(i);
+			writeScheduleInfo("Reduction in number of schedules = " + info[1] + ", out of " + info[0] + " schedules \n");
+			writeScheduleInfo("Reduction because of symmetry = " + info[3] + " schedules \n");
+			writeScheduleInfo("Number of removed constraints =" + info[2] + " \n");
+
+			int scheduleIndex = 0;
+			for (Schedule schedule : schedules) {
+				scheduleIndex++;
+				writeScheduleInfo("---------------------------------------------\n");
+				writeScheduleInfo("Schedule: " + scheduleIndex + "\n");
+				writeScheduleInfo("Number of removed constraints =" + ((ActorSchedule) schedule).getNumOfRemovedConstraints() + "\n");
+				writeScheduleInfo(schedule.toString() + "\n");
+			}
+		}
+		writeScheduleInfo("********************************************\n");
+	}
+
 	public static void logInfo(String log) {
 		System.out.println(log);
 	}
 
-	public static void logSummary(String subject, HashMap<String, ArrayList<int[]>> resultToSetMap) throws IOException {
+	public static void reportSummary(String subject, HashMap<String, ArrayList<int[]>> resultToSetMap) throws IOException {
 		if (summaryWriter != null) {
 
 			for (String result : resultToSetMap.keySet()) {
@@ -92,6 +126,7 @@ public class Logger {
 					symReduc += setSchedules[3];
 					setInfo += padLeft("set", subjectColumnLen + resultColumnLen + numberColumnLen * 3 + 3) + (++setIndex) + ": bef#="
 							+ setSchedules[0] + ", aft#=" + setSchedules[1] + ", remConst#=" + setSchedules[2] + "\n";
+
 				}
 				resultInfo += padRight("|" + String.valueOf(totalBefore))
 						+ padRight("|"

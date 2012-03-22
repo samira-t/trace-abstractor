@@ -1,0 +1,554 @@
+**************** RESULT = DEADLOCK_DETECTED ************************
+Total number of schedules = 15
+Num of clusters (sets) with same events = 1
+==============================================
+Num of clusters (sets) with same events  before symmetry = 1
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 1, out of 15 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+8:
+(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)
+
+********************************************
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 673
+Num of clusters (sets) with same events = 2
+==============================================
+Num of clusters (sets) with same events  before symmetry = 2
+Num of clusters (sets) with same events  after symmetry = 2
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 15, out of 629 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =128 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =12
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(5,9,CellHasMine,0),(8,9,CellHasMine,0),(5,9,CellReveal(_),0),(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =14
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(5,9,CellHasMine,0)->(8,9,CellHasMine,0),(5,9,CellReveal(_),0),(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(4,8,CellHasMine,0),(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(5,8,CellReveal(_),0),(6,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =10
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0),(8,6,CellHasMine,0)->(8,6,CellReveal(_),0),(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(8,9,CellHasMine,0)->(5,9,CellHasMine,0)->(8,9,CellReveal(_),0),(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =10
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(8,9,CellHasMine,0)->(8,9,CellReveal(_),0),(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =4
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0),(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(5,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellReveal(_),0)->(8,9,CellHasMine,0)->(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =12
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0),(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(5,9,CellHasMine,0),(8,9,CellHasMine,0),(5,9,CellReveal(_),0),(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =10
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0),(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(8,9,CellHasMine,0)->(5,9,CellReveal(_),0)->(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(4,8,CellHasMine,0),(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(5,8,CellReveal(_),0),(6,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =6
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(8,9,CellHasMine,0)->(8,9,CellReveal(_),0),(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(5,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 9
+Number of removed constraints =4
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(8,9,CellHasMine,0)->(8,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0),(5,8,CellHasMine,0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 10
+Number of removed constraints =8
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(8,9,CellHasMine,0)->(5,9,CellHasMine,0)->(8,9,CellReveal(_),0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(5,8,CellHasMine,0),(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 11
+Number of removed constraints =2
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(4,7,CellReveal(_),0),(5,7,CellHasMine,0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(8,9,CellHasMine,0)->(8,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(4,8,CellHasMine,0)->(6,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(5,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 12
+Number of removed constraints =10
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(5,7,CellHasMine,0),(4,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(5,9,CellHasMine,0)->(8,9,CellHasMine,0),(5,9,CellReveal(_),0),(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(5,8,CellHasMine,0)->(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 13
+Number of removed constraints =10
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(5,7,CellHasMine,0),(4,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(8,9,CellHasMine,0)->(5,9,CellReveal(_),0)->(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(5,8,CellHasMine,0),(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(5,8,CellReveal(_),0),(6,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 14
+Number of removed constraints =6
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(5,7,CellHasMine,0),(4,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(8,6,CellHasMine,0)->(8,6,CellReveal(_),0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0),(8,9,CellHasMine,0)->(5,9,CellHasMine,0)->(8,9,CellReveal(_),0)->(5,9,CellReveal(_),0)
+8:
+(5,8,CellHasMine,0),(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 15
+Number of removed constraints =6
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(5,7,CellHasMine,0),(4,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(8,6,CellHasMine,0),(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)->(8,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(8,9,CellHasMine,0)->(5,9,CellReveal(_),0)->(8,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(5,8,CellHasMine,0)->(4,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(6,8,!BoolReply(_),0)->(9,8,!BoolReply(_),0)->(6,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+================= Set 2 =================
+Reduction in number of schedules = 6, out of 44 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =14 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(8,7,CellHasMine,0)->(8,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0),(5,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(8,7,CellHasMine,0)->(8,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(8,7,CellHasMine,0)->(8,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(5,9,CellHasMine,0),(6,9,CellReveal(_),0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =4
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(8,7,CellHasMine,0),(5,7,CellReveal(_),0),(8,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(5,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =0
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(4,7,CellHasMine,0)->(5,7,CellHasMine,0)->(8,7,CellHasMine,0)->(8,7,CellReveal(_),0)->(4,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(4,8,CellHasMine,0)->(5,8,CellHasMine,0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =4
+3:
+(2,3,CellHasMine,0)->(2,3,CellReveal(_),0)->(5,3,CellHasMine,0)->(5,3,CellReveal(_),0)
+2:
+(1,2,CellHasMine,0)->(1,2,CellReveal(_),0)->(3,2,!BoolReply(_),0)->(6,2,!BoolReply(_),0)
+1:
+(10,1,CellReveal(_),0)->(4,1,!BoolReply(_),0)->(2,1,!BoolReply(_),0)->(5,1,!BoolReply(_),0)
+10:
+(10,10,TIMEOUT,1)
+7:
+(5,7,CellHasMine,0),(4,7,CellHasMine,0)->(4,7,CellReveal(_),0)->(8,7,CellHasMine,0)->(8,7,CellReveal(_),0)->(5,7,CellReveal(_),0)
+6:
+(2,6,CellHasMine,0)->(2,6,CellReveal(_),0)->(8,6,!BoolReply(_),0)->(9,6,!BoolReply(_),0)->(5,6,CellHasMine,0)->(5,6,CellReveal(_),0)
+5:
+(1,5,CellHasMine,0)->(1,5,CellReveal(_),0)->(7,5,!BoolReply(_),0)->(8,5,!BoolReply(_),0)->(3,5,!BoolReply(_),0)->(6,5,!BoolReply(_),0)->(9,5,!BoolReply(_),0)
+4:
+(1,4,CellHasMine,0)->(1,4,CellReveal(_),0)->(7,4,!BoolReply(_),0)->(8,4,!BoolReply(_),0)
+9:
+(6,9,CellHasMine,0)->(6,9,CellReveal(_),0)->(5,9,CellHasMine,0)->(5,9,CellReveal(_),0)
+8:
+(6,8,CellHasMine,0),(5,8,CellHasMine,0)->(4,8,CellHasMine,0)->(6,8,CellReveal(_),0)->(7,8,!BoolReply(_),0)->(4,8,CellReveal(_),0)->(5,8,CellReveal(_),0)
+
+********************************************
