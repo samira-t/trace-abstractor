@@ -47,7 +47,7 @@ class ActorEvent extends Event {
 			this.content = "!" + signature.replace(")", "");
 		}
 		this.msgVc = msgVc;
-		if (msgVc[senderId] != null)
+		if (msgVc != null)
 			this.seqNum = msgVc[senderId];
 
 	}
@@ -69,7 +69,7 @@ class ActorEvent extends Event {
 				this.content = "!" + signature.replace(")", "");
 			}
 			this.msgVc = msgVc;
-			if (msgVc[senderId] != null)
+			if (msgVc != null)
 				this.seqNum = msgVc[senderId];
 			this.recVc = recVc;
 		} catch (Exception ex) {
@@ -79,9 +79,9 @@ class ActorEvent extends Event {
 	}
 
 	public boolean causallyRelatedTo(ActorEvent otherEvent) {
-		if (recVc != null) {
+		if (msgVc != null && otherEvent.recVc != null) {
 			for (int i = 0; i < msgVc.length; i++) {
-				if (otherEvent.recVc[i].compareTo(msgVc[i]) > 0)
+				if (Integer.parseInt(otherEvent.recVc[i]) > Integer.parseInt(msgVc[i]))
 					return false;
 			}
 			return true;

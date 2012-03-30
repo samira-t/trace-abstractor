@@ -31,7 +31,7 @@ public class Main {
 	}
 
 	private static void runActorScheudleAbstractor() {
-		String bugTraceFolder = ".\\inputs\\full\\";
+		String bugTraceFolder = "./inputs/full/";
 		String dropboxTraceFolder = "C:\\Users\\Samira\\Dropbox\\jpf-actor (1)\\bugtraces\\buginfo\\full\\";
 		String outputFolder1 = ".\\output1\\";
 		String outputFolder2 = ".\\output2\\";
@@ -42,7 +42,7 @@ public class Main {
 		String temp = ".//temp//";
 
 		File traceFolder = new File(bugTraceFolder);
-		String outputFolder = outputFolder_symmetry;
+		String outputFolder = temp;
 		Logger.setSummaryWriter(outputFolder + "summary-2.txt");
 		HashSet<String> processedFiles = new HashSet<String>();
 		File[] files = traceFolder.listFiles();
@@ -63,7 +63,7 @@ public class Main {
 
 					&& traceFile.length() < (1024 * 1024 * 15) && traceFile.getName().contains("eca") && !processedFiles.contains(subject)
 
-			/* && subject.contains("mine") */) {
+			/* && traceFile.getName().contains("procreg-test") */) {
 				// the
 				processedFiles.add(subject);
 

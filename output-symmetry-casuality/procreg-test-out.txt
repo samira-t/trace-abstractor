@@ -1,0 +1,28 @@
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 1
+Num of clusters (sets) with same events = 1
+==============================================
+Num of clusters (sets) with same events  before symmetry = 1
+Num of clusters (sets) with same events  after symmetry = 1
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+2:
+
+1:
+
+0:
+
+7:
+(6,7,!true(_),0)->(2,7,Where(_),0)(4,7,!false(_),1)->(7,7,Down(_),0)(6,7,!(_),0)->(2,7,Audit(_),0)(6,7,!true(_),1)->(7,7,Down(_),1)
+6:
+(1,6,InsertNewForward(_),0)->(2,6,InsertNewForward(_),0)->(7,6,InsertNewBackward(_),0)
+4:
+
+
+********************************************

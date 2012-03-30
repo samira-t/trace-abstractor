@@ -1,0 +1,2772 @@
+**************** RESULT = NO_BUG ************************
+Total number of schedules = 493
+Num of clusters (sets) with same events = 65
+==============================================
+Num of clusters (sets) with same events  before symmetry = 65
+Num of clusters (sets) with same events  after symmetry = 24
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 8, out of 181 schedules 
+Reduction because of symmetry = 11 schedules 
+Number of removed constraints =200 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =8
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =8
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =8
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),][(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =18
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =18
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =20
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,2),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),][(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =6
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 2 =================
+Reduction in number of schedules = 8, out of 78 schedules 
+Reduction because of symmetry = 4 schedules 
+Number of removed constraints =96 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =16
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),][(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =16
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 3 =================
+Reduction in number of schedules = 3, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 4 =================
+Reduction in number of schedules = 8, out of 78 schedules 
+Reduction because of symmetry = 4 schedules 
+Number of removed constraints =96 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =16
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 7
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),][(2,5,Wait,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 8
+Number of removed constraints =16
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 5 =================
+Reduction in number of schedules = 3, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 6 =================
+Reduction in number of schedules = 4, out of 12 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =16 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 7 =================
+Reduction in number of schedules = 3, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+
+
+================= Set 8 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 9 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 10 =================
+Reduction in number of schedules = 4, out of 35 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =46 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =6
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),][(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =6
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =16
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 11 =================
+Reduction in number of schedules = 3, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 12 =================
+Reduction in number of schedules = 3, out of 9 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 13 =================
+Reduction in number of schedules = 4, out of 14 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(1,2,Next,0)->(5,2,Enter(_),0),][(1,2,Next,1)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),2),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Done,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),][(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 14 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 15 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 16 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 17 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(2,2,Next,0)->(4,2,Enter(_),0),][(1,2,Next,0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 18 =================
+Reduction in number of schedules = 3, out of 12 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =16 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 19 =================
+Reduction in number of schedules = 3, out of 12 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =16 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 20 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(2,2,Next,0)->(3,2,Enter(_),0),][(1,2,Next,0)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(2,2,Next,0)->(3,2,Enter(_),0),][(1,2,Next,0)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,1),]
+1:
+[(2,1,Wait,0)->(2,1,Enter(_),1),]
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 21 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 22 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(2,2,Next,0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(2,6,Wait,0)->(1,6,Start,0),][(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 23 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 24 =================
+Reduction in number of schedules = 1, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(2,2,Next,0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(1,2,Next,0),]
+1:
+
+6:
+[(1,6,Start,0)->(1,6,Done,0),]
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+********************************************
+**************** RESULT = TRACE_HAD_ERROR/EXCEPTION/INVALID_TERMINATION ************************
+Total number of schedules = 212
+Num of clusters (sets) with same events = 91
+==============================================
+Num of clusters (sets) with same events  before symmetry = 91
+Num of clusters (sets) with same events  after symmetry = 48
+==============================================
+================= Set 1 =================
+Reduction in number of schedules = 5, out of 22 schedules 
+Reduction because of symmetry = 4 schedules 
+Number of removed constraints =38 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =6
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),][(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),][(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 2 =================
+Reduction in number of schedules = 6, out of 14 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =20 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 3 =================
+Reduction in number of schedules = 3, out of 8 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 4 =================
+Reduction in number of schedules = 6, out of 14 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =20 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 4
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 5
+Number of removed constraints =2
+3:
+
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 6
+Number of removed constraints =2
+3:
+
+2:
+[(5,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 5 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 6 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 7 =================
+Reduction in number of schedules = 1, out of 6 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 8 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 9 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(5,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+
+
+================= Set 10 =================
+Reduction in number of schedules = 3, out of 15 schedules 
+Reduction because of symmetry = 6 schedules 
+Number of removed constraints =24 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 11 =================
+Reduction in number of schedules = 3, out of 8 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 12 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 13 =================
+Reduction in number of schedules = 3, out of 8 schedules 
+Reduction because of symmetry = 3 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(4,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 14 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 15 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 16 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+
+
+================= Set 17 =================
+Reduction in number of schedules = 2, out of 8 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(6,2,Enter(_),0),(4,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(6,2,Enter(_),0),(3,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 18 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(6,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 19 =================
+Reduction in number of schedules = 1, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(6,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 20 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(6,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+================= Set 21 =================
+Reduction in number of schedules = 2, out of 6 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+
+2:
+[(3,2,Enter(_),1)->(6,2,Enter(_),0),(4,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),(6,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+================= Set 22 =================
+Reduction in number of schedules = 1, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(6,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 23 =================
+Reduction in number of schedules = 1, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(4,2,Enter(_),0),(6,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(6,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+================= Set 24 =================
+Reduction in number of schedules = 1, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(6,2,Enter(_),0),][(5,2,Enter(_),0)->(4,2,Enter(_),0),][(6,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+================= Set 25 =================
+Reduction in number of schedules = 1, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =2 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(3,2,Enter(_),1)->(5,2,Enter(_),0),(6,2,Enter(_),0),][(5,2,Enter(_),0)->(4,2,Enter(_),0),][(6,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+================= Set 26 =================
+Reduction in number of schedules = 2, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 27 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 28 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 29 =================
+Reduction in number of schedules = 2, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 30 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 31 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(4,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(2,5,Wait,0)->(1,5,Start,0),][(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 32 =================
+Reduction in number of schedules = 1, out of 6 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =6 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(4,2,Enter(_),1)->(5,2,Enter(_),0),(6,2,Enter(_),0),][(5,2,Enter(_),0)->(3,2,Enter(_),0),][(6,2,Enter(_),0)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+
+================= Set 33 =================
+Reduction in number of schedules = 2, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 34 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 35 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 36 =================
+Reduction in number of schedules = 2, out of 3 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(3,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 37 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+
+4:
+
+
+================= Set 38 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(6,2,Enter(_),0),][(6,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+6:
+
+5:
+[(1,5,Start,0)->(1,5,Done,0),]
+4:
+
+
+================= Set 39 =================
+Reduction in number of schedules = 2, out of 8 schedules 
+Reduction because of symmetry = 2 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(6,2,Enter(_),0),(3,2,Enter(_),0),][(6,2,Enter(_),0)->(4,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(5,2,Enter(_),0),(3,2,Enter(_),0),][(5,2,Enter(_),0)->(4,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+================= Set 40 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),(6,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(6,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+================= Set 41 =================
+Reduction in number of schedules = 1, out of 4 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =4 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+
+2:
+[(5,2,Enter(_),1)->(3,2,Enter(_),0),(6,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(6,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+4:
+
+
+================= Set 42 =================
+Reduction in number of schedules = 2, out of 7 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =12 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =4
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 43 =================
+Reduction in number of schedules = 3, out of 6 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 44 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(1,4,Start,0)->(1,4,Done,0),]
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+[(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Start,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 45 =================
+Reduction in number of schedules = 3, out of 6 schedules 
+Reduction because of symmetry = 1 schedules 
+Number of removed constraints =8 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Done,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =2
+3:
+[(2,3,Wait,0)->(1,3,Start,0),][(1,3,Start,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(4,2,Enter(_),0),(3,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(3,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+---------------------------------------------
+Schedule: 3
+Number of removed constraints =2
+3:
+
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),][(1,4,Start,0)->(1,4,Done,0),]
+
+================= Set 46 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 47 =================
+Reduction in number of schedules = 2, out of 2 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+[(2,3,Wait,0)->(1,3,Done,0),]
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+---------------------------------------------
+Schedule: 2
+Number of removed constraints =0
+3:
+
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+[(2,4,Wait,0)->(1,4,Done,0),]
+
+================= Set 48 =================
+Reduction in number of schedules = 1, out of 1 schedules 
+Reduction because of symmetry = 0 schedules 
+Number of removed constraints =0 
+---------------------------------------------
+Schedule: 1
+Number of removed constraints =0
+3:
+
+2:
+[(6,2,Enter(_),1)->(3,2,Enter(_),0),][(3,2,Enter(_),0)->(4,2,Enter(_),0),][(4,2,Enter(_),0)->(5,2,Enter(_),0),][(5,2,Enter(_),0)->(2,2,Next,0),]
+1:
+
+5:
+
+4:
+
+
+********************************************

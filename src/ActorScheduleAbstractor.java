@@ -195,8 +195,7 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 								breakLoop = true;
 								break;
 							} else
-								System.err.println("is not safe: schedules " + i + " and " + j + " for actor " + actor + " ="
-										+ differenceArray.size());
+								System.err.println("is not safe: schedules " + i + " and " + j + " for actor " + actor + " =" + differenceArray.size());
 						}
 					} else {
 						boolean onlyOneIsMatched = (matchingdifferences1.size() == 0 || matchingdifferences2.size() == 0);
@@ -213,10 +212,8 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 							differences.keySet().removeAll(matchingdifferences2.keySet());
 							for (String actor : differences.keySet()) {
 								ArrayList<Event[]> differenceArray = differences.get(actor);
-								Constraint const1 = matchingdifferences1.size() > 0 ? schedule1.actorToConstraintMap.get(actor)
-										: schedule2.actorToConstraintMap.get(actor);
-								Constraint const2 = matchingdifferences2.size() > 0 ? schedule2.actorToConstraintMap.get(actor)
-										: schedule1.actorToConstraintMap.get(actor);
+								Constraint const1 = matchingdifferences1.size() > 0 ? schedule1.actorToConstraintMap.get(actor) : schedule2.actorToConstraintMap.get(actor);
+								Constraint const2 = matchingdifferences2.size() > 0 ? schedule2.actorToConstraintMap.get(actor) : schedule1.actorToConstraintMap.get(actor);
 								boolean isSafeToMerge = differenceArray.size() == 1 || isSafeToRelpceAllDiffWithD(const1, const2, differenceArray);
 								if (isSafeToMerge) {
 									// boolean constraintRemoved = false;
@@ -234,8 +231,7 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 									breakLoop = true;
 									break;
 								} else
-									System.err.println("is not safe: schedules " + i + " and " + j + " for actor " + actor + " ="
-											+ differenceArray.size());
+									System.err.println("is not safe: schedules " + i + " and " + j + " for actor " + actor + " =" + differenceArray.size());
 							}
 						}
 					}
@@ -255,8 +251,7 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 		setsInfo.add(new int[] { originalSize, schedules.size(), removedConstraints, 0 });
 	}
 
-	public ArrayList<ArrayList<Schedule>> applySymmetryReduction(ArrayList<int[]> setsInfo, ArrayList<ArrayList<Schedule>> scheudlesWithSameEvents)
-			throws Exception {
+	public ArrayList<ArrayList<Schedule>> applySymmetryReduction(ArrayList<int[]> setsInfo, ArrayList<ArrayList<Schedule>> scheudlesWithSameEvents) throws Exception {
 
 		if (symmetricActors != null) {
 
@@ -265,8 +260,7 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 			ArrayList<ArrayList<Integer>> mergedIndexesArrays = new ArrayList<ArrayList<Integer>>();
 			ArrayList<int[]> setsInfoAfterSymmetryReduction = new ArrayList<int[]>();
 
-			ArrayList<ArrayList<Schedule>> schedulesWithSameSymmetricEvents = getScheudlesWithSameSymmetricEvents2(scheudlesWithSameEvents,
-					symmetricActors, mergedIndexesArrays);
+			ArrayList<ArrayList<Schedule>> schedulesWithSameSymmetricEvents = getScheudlesWithSameSymmetricEvents2(scheudlesWithSameEvents, symmetricActors, mergedIndexesArrays);
 
 			for (ArrayList<Schedule> schedules : schedulesWithSameSymmetricEvents) {
 				ArrayList<Schedule> symmetryRemovedSchedules = getSchedulesByRemovingSymmetricEqulivalnetSchedules(schedules, symmetricActors);
@@ -276,17 +270,14 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 				int schedulesIndex = schedulesWithSameSymmetricEvents.indexOf(schedules);
 				ArrayList<Integer> mergedIndexArray = mergedIndexesArrays.get(schedulesIndex);
 				/*
-				 * updating the sets information when they are merged by
-				 * symmetry policies
+				 * updating the sets information when they are merged by symmetry policies
 				 */
 				int[] newInfo = new int[] { 0/* original size */, 0/*
 																 * reduced size
 																 */, 0/*
-																	 * removed
-																	 * constraints
+																	 * removed constraints
 																	 */, 0 /*
-																			 * removed
-																			 * symmetric
+																			 * removed symmetric
 																			 */};
 				for (Integer index : mergedIndexArray) {
 					newInfo[0] += setsInfo.get(index)[0];
@@ -401,8 +392,7 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 
 	}
 
-	private ArrayList<Schedule> getSchedulesByRemovingSymmetricEqulivalnetSchedules(ArrayList<Schedule> schedules, ArrayList<String> symmetricActors)
-			throws Exception {
+	private ArrayList<Schedule> getSchedulesByRemovingSymmetricEqulivalnetSchedules(ArrayList<Schedule> schedules, ArrayList<String> symmetricActors) throws Exception {
 		ArrayList<Schedule> result = new ArrayList<Schedule>();
 		ArrayList<Schedule> redundantSchedules = new ArrayList<Schedule>();
 		for (int i = 0; i < schedules.size(); i++) {
@@ -511,8 +501,8 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 		return result;
 	}
 
-	private ArrayList<ArrayList<Schedule>> getScheudlesWithSameSymmetricEvents2(ArrayList<ArrayList<Schedule>> schedulesWithSameEvents,
-			ArrayList<String> symmetricActors, ArrayList<ArrayList<Integer>> mergedIndexArrays) {
+	private ArrayList<ArrayList<Schedule>> getScheudlesWithSameSymmetricEvents2(ArrayList<ArrayList<Schedule>> schedulesWithSameEvents, ArrayList<String> symmetricActors,
+			ArrayList<ArrayList<Integer>> mergedIndexArrays) {
 		ArrayList<ArrayList<Schedule>> result = new ArrayList<ArrayList<Schedule>>();
 		ArrayList<Schedule> removedSchedules = new ArrayList<Schedule>();
 		for (int i = 0; i < schedulesWithSameEvents.size(); i++) {
@@ -669,10 +659,12 @@ public class ActorScheduleAbstractor extends ScheduleAbstractor {
 	@Override
 	Event parseLineForEvent(String line) {
 		String[] eventParts = line.split(":");
-		String[] msgVc = Arrays.copyOfRange(eventParts[5].substring(1, eventParts[5].length() - 1).split(", "), 0, 11);
+		String vc = eventParts[5].substring(1, eventParts[5].length() - 1);
+		String[] msgVc = (vc.length() > 0) ? Arrays.copyOfRange(vc.split(", "), 0, 11) : null;
 		if (eventParts.length > 6) {
 			try {
-				String[] recVc = Arrays.copyOfRange(eventParts[6].substring(1, eventParts[6].length() - 1).split(", "), 0, 11);
+				vc = eventParts[6].substring(1, eventParts[6].length() - 1);
+				String[] recVc = (vc.length() > 0) ? Arrays.copyOfRange(vc.split(", "), 0, 11) : null;
 				return new ActorEvent(eventParts[0], eventParts[1], eventParts[3], msgVc, recVc);
 			} catch (Exception ex) {
 				// String[] eventParts = line.split(":");

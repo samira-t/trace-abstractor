@@ -1,0 +1,218 @@
+subject                       |result        |#sched |#after |#sym   |#sets   
+ 
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/sleepingbarber-eca-3|NO_BUG        |493    |98(20%)|71(14%)|24     
+                                                                     set1: bef#=181, aft#=8, remConst#=200
+                                                                     set2: bef#=78, aft#=8, remConst#=96
+                                                                     set3: bef#=9, aft#=3, remConst#=12
+                                                                     set4: bef#=78, aft#=8, remConst#=96
+                                                                     set5: bef#=9, aft#=3, remConst#=12
+                                                                     set6: bef#=12, aft#=4, remConst#=16
+                                                                     set7: bef#=9, aft#=3, remConst#=12
+                                                                     set8: bef#=3, aft#=1, remConst#=4
+                                                                     set9: bef#=3, aft#=1, remConst#=4
+                                                                     set10: bef#=35, aft#=4, remConst#=46
+                                                                     set11: bef#=9, aft#=3, remConst#=12
+                                                                     set12: bef#=9, aft#=3, remConst#=12
+                                                                     set13: bef#=14, aft#=4, remConst#=12
+                                                                     set14: bef#=2, aft#=2, remConst#=0
+                                                                     set15: bef#=2, aft#=2, remConst#=0
+                                                                     set16: bef#=1, aft#=1, remConst#=0
+                                                                     set17: bef#=1, aft#=1, remConst#=0
+                                                                     set18: bef#=12, aft#=3, remConst#=16
+                                                                     set19: bef#=12, aft#=3, remConst#=16
+                                                                     set20: bef#=2, aft#=2, remConst#=0
+                                                                     set21: bef#=3, aft#=1, remConst#=4
+                                                                     set22: bef#=3, aft#=1, remConst#=4
+                                                                     set23: bef#=3, aft#=1, remConst#=4
+                                                                     set24: bef#=3, aft#=1, remConst#=4
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/sleepingbarber-eca-3|EXCEPTION     |212    |132(62%)|88(42%)|48     
+                                                                     set1: bef#=22, aft#=5, remConst#=38
+                                                                     set2: bef#=14, aft#=6, remConst#=20
+                                                                     set3: bef#=8, aft#=3, remConst#=8
+                                                                     set4: bef#=14, aft#=6, remConst#=20
+                                                                     set5: bef#=4, aft#=1, remConst#=2
+                                                                     set6: bef#=2, aft#=2, remConst#=0
+                                                                     set7: bef#=6, aft#=1, remConst#=4
+                                                                     set8: bef#=2, aft#=2, remConst#=0
+                                                                     set9: bef#=4, aft#=1, remConst#=2
+                                                                     set10: bef#=15, aft#=3, remConst#=24
+                                                                     set11: bef#=8, aft#=3, remConst#=8
+                                                                     set12: bef#=2, aft#=2, remConst#=0
+                                                                     set13: bef#=8, aft#=3, remConst#=8
+                                                                     set14: bef#=1, aft#=1, remConst#=0
+                                                                     set15: bef#=2, aft#=2, remConst#=0
+                                                                     set16: bef#=1, aft#=1, remConst#=0
+                                                                     set17: bef#=8, aft#=2, remConst#=12
+                                                                     set18: bef#=4, aft#=1, remConst#=4
+                                                                     set19: bef#=2, aft#=1, remConst#=2
+                                                                     set20: bef#=4, aft#=1, remConst#=4
+                                                                     set21: bef#=6, aft#=2, remConst#=8
+                                                                     set22: bef#=2, aft#=1, remConst#=2
+                                                                     set23: bef#=2, aft#=1, remConst#=2
+                                                                     set24: bef#=2, aft#=1, remConst#=2
+                                                                     set25: bef#=2, aft#=1, remConst#=2
+                                                                     set26: bef#=3, aft#=2, remConst#=4
+                                                                     set27: bef#=1, aft#=1, remConst#=0
+                                                                     set28: bef#=1, aft#=1, remConst#=0
+                                                                     set29: bef#=3, aft#=2, remConst#=4
+                                                                     set30: bef#=1, aft#=1, remConst#=0
+                                                                     set31: bef#=1, aft#=1, remConst#=0
+                                                                     set32: bef#=6, aft#=1, remConst#=6
+                                                                     set33: bef#=3, aft#=2, remConst#=4
+                                                                     set34: bef#=1, aft#=1, remConst#=0
+                                                                     set35: bef#=1, aft#=1, remConst#=0
+                                                                     set36: bef#=3, aft#=2, remConst#=4
+                                                                     set37: bef#=1, aft#=1, remConst#=0
+                                                                     set38: bef#=1, aft#=1, remConst#=0
+                                                                     set39: bef#=8, aft#=2, remConst#=12
+                                                                     set40: bef#=4, aft#=1, remConst#=4
+                                                                     set41: bef#=4, aft#=1, remConst#=4
+                                                                     set42: bef#=7, aft#=2, remConst#=12
+                                                                     set43: bef#=6, aft#=3, remConst#=8
+                                                                     set44: bef#=2, aft#=2, remConst#=0
+                                                                     set45: bef#=6, aft#=3, remConst#=8
+                                                                     set46: bef#=1, aft#=1, remConst#=0
+                                                                     set47: bef#=2, aft#=2, remConst#=0
+                                                                     set48: bef#=1, aft#=1, remConst#=0
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/procreg-eca-3|NO_BUG        |34     |14(41%)|7(21%) |3      
+                                                                     set1: bef#=7, aft#=2, remConst#=0
+                                                                     set2: bef#=20, aft#=4, remConst#=4
+                                                                     set3: bef#=7, aft#=1, remConst#=2
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/procreg-eca-3|EXCEPTION     |5      |4(80%) |3(60%) |3      
+                                                                     set1: bef#=3, aft#=1, remConst#=0
+                                                                     set2: bef#=1, aft#=1, remConst#=0
+                                                                     set3: bef#=1, aft#=1, remConst#=0
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/procreg1-eca-3|NO_BUG        |360    |158(44%)|130(36%)|13     
+                                                                     set1: bef#=140, aft#=49, remConst#=30
+                                                                     set2: bef#=9, aft#=5, remConst#=2
+                                                                     set3: bef#=131, aft#=33, remConst#=30
+                                                                     set4: bef#=26, aft#=10, remConst#=4
+                                                                     set5: bef#=3, aft#=3, remConst#=0
+                                                                     set6: bef#=1, aft#=1, remConst#=0
+                                                                     set7: bef#=10, aft#=4, remConst#=2
+                                                                     set8: bef#=1, aft#=1, remConst#=0
+                                                                     set9: bef#=17, aft#=11, remConst#=2
+                                                                     set10: bef#=1, aft#=1, remConst#=0
+                                                                     set11: bef#=18, aft#=9, remConst#=2
+                                                                     set12: bef#=2, aft#=2, remConst#=0
+                                                                     set13: bef#=1, aft#=1, remConst#=0
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/procreg1-eca-3|EXCEPTION     |926    |264(29%)|204(22%)|52     
+                                                                     set1: bef#=77, aft#=11, remConst#=12
+                                                                     set2: bef#=26, aft#=3, remConst#=6
+                                                                     set3: bef#=15, aft#=3, remConst#=4
+                                                                     set4: bef#=47, aft#=6, remConst#=10
+                                                                     set5: bef#=12, aft#=3, remConst#=0
+                                                                     set6: bef#=10, aft#=3, remConst#=0
+                                                                     set7: bef#=71, aft#=9, remConst#=8
+                                                                     set8: bef#=22, aft#=3, remConst#=4
+                                                                     set9: bef#=16, aft#=3, remConst#=4
+                                                                     set10: bef#=34, aft#=6, remConst#=8
+                                                                     set11: bef#=125, aft#=16, remConst#=30
+                                                                     set12: bef#=32, aft#=9, remConst#=6
+                                                                     set13: bef#=26, aft#=9, remConst#=6
+                                                                     set14: bef#=14, aft#=8, remConst#=0
+                                                                     set15: bef#=3, aft#=2, remConst#=0
+                                                                     set16: bef#=100, aft#=15, remConst#=30
+                                                                     set17: bef#=23, aft#=7, remConst#=4
+                                                                     set18: bef#=19, aft#=7, remConst#=4
+                                                                     set19: bef#=12, aft#=7, remConst#=0
+                                                                     set20: bef#=2, aft#=2, remConst#=0
+                                                                     set21: bef#=27, aft#=3, remConst#=8
+                                                                     set22: bef#=4, aft#=3, remConst#=2
+                                                                     set23: bef#=4, aft#=3, remConst#=2
+                                                                     set24: bef#=8, aft#=1, remConst#=0
+                                                                     set25: bef#=6, aft#=1, remConst#=0
+                                                                     set26: bef#=1, aft#=1, remConst#=0
+                                                                     set27: bef#=21, aft#=2, remConst#=4
+                                                                     set28: bef#=3, aft#=2, remConst#=2
+                                                                     set29: bef#=3, aft#=2, remConst#=2
+                                                                     set30: bef#=12, aft#=2, remConst#=4
+                                                                     set31: bef#=2, aft#=1, remConst#=0
+                                                                     set32: bef#=2, aft#=1, remConst#=0
+                                                                     set33: bef#=2, aft#=1, remConst#=0
+                                                                     set34: bef#=2, aft#=1, remConst#=0
+                                                                     set35: bef#=7, aft#=2, remConst#=2
+                                                                     set36: bef#=1, aft#=1, remConst#=0
+                                                                     set37: bef#=1, aft#=1, remConst#=0
+                                                                     set38: bef#=1, aft#=1, remConst#=0
+                                                                     set39: bef#=1, aft#=1, remConst#=0
+                                                                     set40: bef#=31, aft#=4, remConst#=6
+                                                                     set41: bef#=9, aft#=2, remConst#=2
+                                                                     set42: bef#=7, aft#=2, remConst#=2
+                                                                     set43: bef#=14, aft#=5, remConst#=2
+                                                                     set44: bef#=45, aft#=13, remConst#=10
+                                                                     set45: bef#=5, aft#=4, remConst#=0
+                                                                     set46: bef#=5, aft#=4, remConst#=0
+                                                                     set47: bef#=1, aft#=1, remConst#=0
+                                                                     set48: bef#=1, aft#=1, remConst#=0
+                                                                     set49: bef#=9, aft#=2, remConst#=2
+                                                                     set50: bef#=1, aft#=1, remConst#=0
+                                                                     set51: bef#=1, aft#=1, remConst#=0
+                                                                     set52: bef#=3, aft#=2, remConst#=0
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/musicplayer3-eca-1|DEADLOCK      |6      |3(50%) |3(50%) |3      
+                                                                     set1: bef#=2, aft#=1, remConst#=0
+                                                                     set2: bef#=2, aft#=1, remConst#=0
+                                                                     set3: bef#=2, aft#=1, remConst#=0
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/musicplayer3-eca-1|NO_BUG        |120    |4(3%)  |4(3%)  |1      
+                                                                     set1: bef#=120, aft#=4, remConst#=14
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/minesweeper-eca-2|DEADLOCK      |15     |1(7%)  |1(7%)  |1      
+                                                                     set1: bef#=15, aft#=1, remConst#=0
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/minesweeper-eca-2|NO_BUG        |673    |22(3%) |21(3%) |2      
+                                                                     set1: bef#=629, aft#=15, remConst#=128
+                                                                     set2: bef#=44, aft#=6, remConst#=14
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/leader-eca-2|NO_BUG        |532    |63(12%)|63(12%)|14     
+                                                                     set1: bef#=81, aft#=6, remConst#=38
+                                                                     set2: bef#=76, aft#=6, remConst#=30
+                                                                     set3: bef#=1, aft#=1, remConst#=0
+                                                                     set4: bef#=4, aft#=1, remConst#=2
+                                                                     set5: bef#=137, aft#=9, remConst#=50
+                                                                     set6: bef#=14, aft#=2, remConst#=8
+                                                                     set7: bef#=9, aft#=2, remConst#=8
+                                                                     set8: bef#=115, aft#=9, remConst#=48
+                                                                     set9: bef#=12, aft#=4, remConst#=14
+                                                                     set10: bef#=7, aft#=4, remConst#=0
+                                                                     set11: bef#=3, aft#=3, remConst#=0
+                                                                     set12: bef#=28, aft#=5, remConst#=20
+                                                                     set13: bef#=7, aft#=3, remConst#=4
+                                                                     set14: bef#=38, aft#=8, remConst#=28
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/leader-eca-2|INVALID_STATE |1144   |11(1%) |11(1%) |1      
+                                                                     set1: bef#=1144, aft#=11, remConst#=112
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/leaderzero-eca-1|NO_BUG        |83     |17(20%)|17(20%)|10     
+                                                                     set1: bef#=68, aft#=7, remConst#=38
+                                                                     set2: bef#=3, aft#=1, remConst#=0
+                                                                     set3: bef#=1, aft#=1, remConst#=0
+                                                                     set4: bef#=2, aft#=1, remConst#=0
+                                                                     set5: bef#=2, aft#=1, remConst#=0
+                                                                     set6: bef#=1, aft#=1, remConst#=0
+                                                                     set7: bef#=1, aft#=1, remConst#=0
+                                                                     set8: bef#=1, aft#=1, remConst#=0
+                                                                     set9: bef#=2, aft#=1, remConst#=2
+                                                                     set10: bef#=2, aft#=2, remConst#=0
+
+==========================================
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/activestandby-eca-3|NO_BUG        |180    |10(6%) |10(6%) |2      
+                                                                     set1: bef#=172, aft#=8, remConst#=106
+                                                                     set2: bef#=8, aft#=2, remConst#=4
+
+/home/samira/workspace/workspace-scala/trace-abstractor/./inputs/full/activestandby-eca-3|INVALID_STATE |31     |3(10%) |3(10%) |1      
+                                                                     set1: bef#=31, aft#=3, remConst#=18
+
+==========================================

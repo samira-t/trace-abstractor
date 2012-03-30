@@ -171,24 +171,61 @@ public class Constraint {
 		return shortResult + "\n" + detailResult;
 	}
 
+	// public String toString() {
+	// String shortResult = "";
+	// ArrayList<Integer> addedEventIndex = new ArrayList<Integer>();
+	// for (int i = 0; i < events1.size(); i++) {
+	// ActorEvent event1 = (ActorEvent) events1.get(i);
+	// // if (i == 0)
+	// // shortResult += event1.toString();
+	// if (i < events2.size() - 1) {
+	// ActorEvent event2 = (ActorEvent) events2.get(i + 1);
+	// if (HBRel[i][i + 1] == HappensBefore.Y) {
+	// if (!event2.causallyRelatedTo(event1)) {
+	// if (!addedEventIndex.contains(Integer.valueOf(i))) {
+	// shortResult += event1.toString();
+	// addedEventIndex.add(i);
+	// }
+	// shortResult += "->" + event2.toString();
+	// addedEventIndex.add(i + 1);
+	// } else
+	// Logger.logInfo("casually related" + events1.get(i) + " and " + events2.get(i + 1));
+	// }
+	//
+	// else if (HBRel[i][i + 1] == HappensBefore.D)
+	// shortResult += "," + event2.toString();
+	// }
+	// }
+	// return shortResult + "\n";
+	// }
+
 	public String toString() {
 		String shortResult = "";
+		ArrayList<Integer> added = new ArrayList<Integer>();
 		for (int i = 0; i < events1.size(); i++) {
 			ActorEvent event1 = (ActorEvent) events1.get(i);
-			if (i == 0)
-				shortResult += event1.toString();
-			if (i < events2.size() - 1) {
-				ActorEvent event2 = (ActorEvent) events2.get(i + 1);
-				if (HBRel[i][i + 1] == HappensBefore.Y) {
-					if (!events1.get(i).causallyRelatedTo(events2.get(i + 1)))
-						shortResult += "->" + event2.toString();
-					else
-						Logger.logInfo("casually related" + events1.get(i) + " and " + events2.get(i + 1));
+			ArrayList<Integer> shouldPrint = new ArrayList<Integer>();
+			for (int j = i + 1; j < events2.size(); j++) {
+				if (HBRel[i][j] == HappensBefore.Y && !events2.get(j).causallyRelatedTo(event1)) {
+					boolean redundant = false;
+					for (int k = i + 1; k < j; k++) {
+						if (shouldPrint.contains(Integer.valueOf(k)) && HBRel[k][j] == HappensBefore.Y) {
+							redundant = true;
+							break;
+						}
+					}
+					if (!redundant)
+						shouldPrint.add(j);
 				}
-
-				else if (HBRel[i][i + 1] == HappensBefore.D)
-					shortResult += "," + event2.toString();
 			}
+			if (shouldPrint.size() > 0) {
+				shortResult += "[" + event1.toString() + "->";
+				for (Integer index : shouldPrint) {
+					shortResult += events2.get(index).toString() + ",";
+				}
+				shortResult += "]";
+			}
+
 		}
 		return shortResult + "\n";
 	}
